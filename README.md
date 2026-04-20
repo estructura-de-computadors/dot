@@ -12,10 +12,10 @@ L'objectiu és passar d'una implementació **escalar** (execució instrucció a 
 
 Recorda que el producte escalar entre dos vectors es defineix com:
 
-\[
+$$
 \mathbf{a} \cdot \mathbf{b} = 
 \sum_{k=0}^{n-1} a_k b_k = a_0 b_0 + a_1 b_1 + \ldots + a_{n-1} b_{n-1}.
-\]
+$$
 
 La imatge següent compara el recorregut seqüencial d'un vector (esquerra) contra el recorregut vectorial (dreta) de dos elements alhora, cicle a cicle. Fixa't que el vectorial acaba en la **meitat** de temps:
 
