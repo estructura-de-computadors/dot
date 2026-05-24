@@ -77,7 +77,7 @@ Sents que la IA t'ha "alliberat" de la sintaxi feixuga de RISC-V per centrar-te 
 
 ### 2.5 Satisfacció, exploració i multitasca
 
-Consideres que l'agent t'ha permès abordar solucions més *complexes* que treballant de manera *tradicional*?
+Consideres que l'agent t'ha permès abordar solucions més _complexes_ que treballant de manera _tradicional_?
 
 > _Escriu la teva resposta aquí..._
 
@@ -96,7 +96,7 @@ Com has aprofitat el temps mentre l'agent processava les teves peticions (algune
 
 ## 4. Lliçons apreses
 
-Elabora un llistat de les lliçons apreses que, segons la teva opinió, t'han resultat més importants: 
+Elabora un llistat de les lliçons apreses que, segons la teva opinió, t'han resultat més importants:
 
 > * _Lliçó 1: breu explicació de l'aprenentatge._
 > * _Lliçó 2: breu explicació de l'aprenentatge._

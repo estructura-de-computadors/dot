@@ -2,7 +2,7 @@
 
 ## 👋 Introducció
 
-Benvingut a aquesta pràctica de laboratori interactiva de l'assignatura **Estructura de Computadors (EC)** de la Facultat d'Informàtica de Barcelona (FIB) a la Universitat Politècnica de Catalunya (UPC). En aquesta sessió explorarem com accelerar el còmput del producte escalar entre dos vectors (en anglès, *dot product* - `dot`) utilitzant l'extensió vectorial RVV de RISC-V, amb el suport d'un agent d'intel·ligència artificial (GitHub Copilot) que actuarà com el teu tutor personal. 
+Benvingut a aquesta pràctica de laboratori interactiva de l'assignatura **Estructura de Computadors (EC)** de la Facultat d'Informàtica de Barcelona (FIB) a la Universitat Politècnica de Catalunya (UPC). En aquesta sessió explorarem com accelerar el còmput del producte escalar entre dos vectors (en anglès, *dot product* - `dot`) utilitzant l'extensió vectorial RVV de RISC-V, amb el suport d'un agent d'intel·ligència artificial (GitHub Copilot) que actuarà com el teu tutor personal.
 
 Aquesta activitat forma part d'un projecte d'innovació docent que busca potenciar la teva autonomia i preparar-te per a les arquitectures de computació d'altes prestacions (HPC).
 
@@ -13,7 +13,7 @@ L'objectiu és passar d'una implementació **escalar** (execució instrucció a 
 Recorda que el producte escalar entre dos vectors es defineix com:
 
 $$
-\mathbf{a} \cdot \mathbf{b} = 
+\mathbf{a} \cdot \mathbf{b} =
 \sum_{k=0}^{n-1} a_k b_k = a_0 b_0 + a_1 b_1 + \ldots + a_{n-1} b_{n-1}.
 $$
 
@@ -23,6 +23,7 @@ La imatge següent compara el recorregut seqüencial d'un vector (esquerra) cont
 ![vec](vec.gif)
 
 El teu objectiu és:
+
 1. Analitzar el codi escalar de referència i resoldre dubtes relacionades.
 2. Implementar una solució vectorial que aprofiti la naturalesa **VLA (vector length agnostic)** de RISC-V per obtenir un speedup significatiu.
 
@@ -88,7 +89,7 @@ Per eliminar els binaris utilitza:
 make clean
 ```
 
-### Visual Code Studio
+### Visual Studio Code
 
 1. Crea un compte de [GitHub Education](https://github.com/education).
 2. Instal·la l'extensió `General Assembly Hightlighter` (Vicent Vaeza) de VS Code.

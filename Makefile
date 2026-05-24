@@ -1,7 +1,6 @@
 # Copyright (C) 2026 Pedro J. Martinez-Ferrer
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-
 # Compilation flags
 CC = riscv64-linux-gnu-gcc
 CFLAGS = -static -O2 -Wall -std=c11
@@ -17,7 +16,7 @@ all: dot_prod_c dot_prod_scalar dot_prod_vector
 run_all: run_dot_prod_c run_dot_prod_scalar run_dot_prod_vector
 
 
-# C dot product 
+# C dot product
 dot_prod_c: dot_prod.c dot.c fill.c
 	$(CC) $(CFLAGS) -march=rv64gc -o \
 	dot_prod_c dot_prod.c dot.c fill.c -lm
