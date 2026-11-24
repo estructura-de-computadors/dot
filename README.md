@@ -1,3 +1,5 @@
+🌐 **Català** | [Español](README.es.md)
+
 # Repte de vectorització RISC-V: Producte escalar de vectors (dot)
 
 ## 👋 Introducció
@@ -24,7 +26,7 @@ La imatge següent compara el recorregut seqüencial d'un vector (esquerra) cont
 
 El teu objectiu és:
 
-1. Analitzar el codi escalar de referència i resoldre dubtes relacionades.
+1. Analitzar el codi escalar de referència i resoldre dubtes relacionats.
 2. Implementar una solució vectorial que aprofiti la naturalesa **VLA (vector length agnostic)** de RISC-V per obtenir un speedup significatiu.
 
 ## 📋 Treball previ
@@ -57,7 +59,7 @@ Primerament crea un compte de [GitHub (Education)](https://github.com/education)
 El repositori conté els següents fitxers clau:
 
 * **`Makefile`**: Eina per automatitzar la compilació, l'execució i el testeig del codi.
-* **`dot_product.c`**: El programa principal (`main`) que s'encarrega d'inicialitzar els vectors, cridar les funcions de producte escalar i mesurar-ne el temps d'execució.
+* **`dot_prod.c`**: El programa principal (`main`) que s'encarrega d'inicialitzar els vectors, cridar les funcions de producte escalar i mesurar-ne el temps d'execució.
 * **`dot.c`**: Implementació de referència en llenguatge C de l'algoritme del producte escalar.
 * **`dot_riscv_scalar.s`**: Codi font en assemblador RISC-V utilitzant instruccions escalars. Es tracta d'una segona solució de referència escrita en assemblador.
 * **`dot_riscv_vector.s`**: Fitxer on has de desenvolupar la solució vectorial utilitzant l'extensió RVV. Conté una estructura bàsica amb TODOs per guiar-te.
@@ -70,7 +72,7 @@ El repositori conté els següents fitxers clau:
 
 1. Descarrega el repositori al teu ordinador (`git clone https://github.com/estructura-de-computadors/dot.git`).
 2. Obre el repositori amb VS Code (`File -> Open folder...`) i selecciona l'opció: `Yes, I trust the authors`.
-3. Fixa't que l'extensió Dev Containers et demanarà *reobrir* el repositori dins d'un contenidor (docker): accepta la invitació.  Si no sortís el missatge, tanca VS Studio i torna'l a obrir.
+3. Fixa't que l'extensió Dev Containers et demanarà *reobrir* el repositori dins d'un contenidor (docker): accepta la invitació.  Si no sortís el missatge, tanca VS Code i torna'l a obrir.
 4. Espera diversos minuts a la descàrrega de la imatge de Docker.  La primera vegada pot trigar diversos minuts, en funció de la connectivitat a Internet.
 
 ### Copilot Chat
@@ -114,7 +116,7 @@ make clean
 1. **Preparació:** Abans de començar, assegura't d'haver revisat el material previ sobre l'ISA vectorial de RISC-V i el funcionament de l'extensió RVV. Instal·la VS Code seguint les instruccions descrites en aquest document. Finalment, recorda afegir al repositori el document de l'especificació RVV 1.0 perquè l'agent pugui treballar correctament.
 2. **Posa en marxa el cronòmetre:** Comença a mesurar el temps que dediques a realitzar la pràctica per reportar-lo més endavant.
 3. **Configuració de l'agent:** Obre el fitxer `AGENTS.md` per comprendre com està definit el rol de l'agent `fiber-teacher`.
-4. **Desenvolupament iteratiu:** Parla amb l'agent per entendre com s'ha d'implementar la vectorització de manera gradual de manera gradual. Pots demanar-li detalls específics sobre com configurar la longitud del vector `VL` amb la instrucció `vsetvli` i com realitzar la reducció final d'un registre vectorial a un d'escalar.
+4. **Desenvolupament iteratiu:** Parla amb l'agent per entendre com s'ha d'implementar la vectorització de manera gradual. Pots demanar-li detalls específics sobre com configurar la longitud del vector `VL` amb la instrucció `vsetvli` i com realitzar la reducció final d'un registre vectorial a un d'escalar.
 5. **Validació:** Demana a l'agent que compari els resultats entre les versions escalar i vectorial fent servir les comandes disponibles al `Makefile`, el temps mesurats, el speedup final obtingut i el teòric.
 6. **Mesurabilitat**: Mesura el budget consumit associat a les interaccions amb l'agent (tokens, requests, etc.), els outputs de la terminal i guarda la transcripció completa del xat amb l'agent. Recorda adjuntar aquesta informació com a part del lliurament.
 
@@ -143,7 +145,7 @@ Per evitar les al·lucinacions i millorar la transparència de les respostes de 
 
 Aquest projecte inclou un agent d'IA per ajudar-te a aprendre. Fes-lo servir com una eina per explorar idees, entendre conceptes i depurar el teu treball, però recorda que alguna de les respostes generades poden ser incompletes o incorrectes, malgrat que la IA agèntica és capaç d'autocorregir-se. **És important que protegeixes la teva privacitat** compartint només la informació necessària per realitzar la tasca. No revelis mai el teu nom complet, adreça, número de telèfon, correu electrònic, identificador d'estudiant, contrasenyes, fitxers privats ni cap altra informació personal sensible. De la mateixa manera, no comparteixis informació personal sobre companys, instructors o qualsevol altra persona sense el seu consentiment explícit. Com a regla general, minimitza les dades que proporciones.
 
-Interacciona amb l'agent de manera respectuosa i responsable. No la facis servir per generar contingut abusiu o assetjador, demanar instruccions perjudicials o insegures, o donar suport a activitats no ètiques. Segueix les polítiques d'integritat acadèmica de la universitat: l'agent pot ajudar-te a aprendre, explicar conceptes o identificar errors, però no s'ha d'utilitzar per completar treballs avaluats o obtenir un avantatge injust, tret que el teu professor l'hagi permès explícitament. Quan tinguis dubtes, tracta la IA com un assistent d'aprenentatge en lloc d'una font autoritària o un substitut del teu propi treball.
+Interacciona amb l'agent de manera respectuosa i responsable. No el facis servir per generar contingut abusiu o assetjador, demanar instruccions perjudicials o insegures, o donar suport a activitats no ètiques. Segueix les polítiques d'integritat acadèmica de la universitat: l'agent pot ajudar-te a aprendre, explicar conceptes o identificar errors, però no s'ha d'utilitzar per completar treballs avaluats o obtenir un avantatge injust, tret que el teu professor l'hagi permès explícitament. Quan tinguis dubtes, tracta la IA com un assistent d'aprenentatge en lloc d'una font autoritària o un substitut del teu propi treball.
 
 ## 🔒 Llicència
 
